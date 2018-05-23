@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 23/05/2018 05:49:30 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="modelo.entity.Usuario" table="usuario" catalog="gonio" optimistic-lock="version">
+        <id name="idUsuario" type="java.lang.Integer">
+            <column name="id_usuario" />
+            <generator class="identity" />
+        </id>
+        <property name="nome" type="string">
+            <column name="nome" length="100" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="100" />
+        </property>
+        <property name="senha" type="string">
+            <column name="senha" length="250" />
+        </property>
+        <property name="cadastro" type="timestamp">
+            <column name="cadastro" length="19" />
+        </property>
+    </class>
+</hibernate-mapping>

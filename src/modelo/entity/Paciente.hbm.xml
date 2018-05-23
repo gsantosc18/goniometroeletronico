@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 23/05/2018 05:49:30 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="modelo.entity.Paciente" table="paciente" catalog="gonio" optimistic-lock="version">
+        <id name="idPaciente" type="java.lang.Integer">
+            <column name="id_paciente" />
+            <generator class="identity" />
+        </id>
+        <property name="nome" type="string">
+            <column name="nome" length="45" />
+        </property>
+        <property name="idade" type="java.lang.Integer">
+            <column name="idade" />
+        </property>
+        <property name="altura" type="java.lang.Double">
+            <column name="altura" precision="22" scale="0" />
+        </property>
+        <property name="nascimento" type="date">
+            <column name="nascimento" length="10" />
+        </property>
+        <property name="sexo" type="string">
+            <column name="sexo" length="10" />
+        </property>
+        <property name="observacao" type="string">
+            <column name="observacao" length="65535">
+                <comment>tabela que guarda as informa&#195;&#167;&#195;&#181;es dos pacientes</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

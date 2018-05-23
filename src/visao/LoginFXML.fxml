@@ -4,17 +4,18 @@
 <?import javafx.scene.image.*?>
 <?import javafx.scene.text.*?>
 <?import com.jfoenix.controls.*?>
+<?import java.net.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="839.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controle.LoginFXMLController">
    <center>
-      <AnchorPane prefHeight="400.0" prefWidth="350.0" style="-fx-background-color: rgb(0,100,157);" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="400.0" prefWidth="268.0" style="-fx-background-color: rgb(0,100,157);" BorderPane.alignment="CENTER">
          <children>
-            <VBox alignment="CENTER" prefHeight="400.0" prefWidth="358.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <VBox alignment="CENTER" minWidth="350.0" prefHeight="400.0" prefWidth="383.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <children>
                   <Label prefHeight="61.0" prefWidth="150.0" text="Goniometro Eletrônico" textAlignment="CENTER" textFill="WHITE" wrapText="true">
                      <font>
@@ -26,7 +27,7 @@
                   </Label>
                   <ImageView fitHeight="218.0" fitWidth="383.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../Imagens/foto1.jpg" />
+                        <Image url="@../image/foto1.jpg" />
                      </image>
                   </ImageView>
                </children>
@@ -34,27 +35,28 @@
          </children></AnchorPane>
    </center>
    <right>
-      <Accordion prefHeight="400.0" prefWidth="241.0" BorderPane.alignment="CENTER">
+      <Accordion fx:id="acordeon" prefHeight="400.0" prefWidth="300.0" BorderPane.alignment="CENTER">
         <panes>
-          <TitledPane animated="false" style="-fx-text-fill: white; -fx-color: #1565c0;" text="Fazer Login">
+          <TitledPane fx:id="tpLogin" animated="false" style="-fx-text-fill: white; -fx-color: #1565c0;" text="Fazer Login">
             <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <AnchorPane minHeight="0.0" minWidth="200.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <JFXTextField fx:id="inputEmail" labelFloat="true" layoutX="13.0" layoutY="30.0" prefHeight="25.0" prefWidth="213.0" promptText="Email" AnchorPane.topAnchor="30.0" />
-                        <JFXButton buttonType="RAISED" layoutX="12.0" layoutY="122.0" prefHeight="25.0" prefWidth="215.0" style="-fx-background-color: green; -fx-text-fill: white;" text="Entrar" AnchorPane.topAnchor="122.0" />
-                        <JFXPasswordField fx:id="inputSenha" layoutX="13.0" layoutY="74.0" prefHeight="25.0" prefWidth="214.0" promptText="Senha" AnchorPane.topAnchor="74.0" />
+                        <JFXTextField fx:id="inputEmail" labelFloat="true" layoutX="43.0" layoutY="37.0" prefHeight="25.0" prefWidth="213.0" promptText="Email" AnchorPane.topAnchor="37.0" />
+                        <JFXPasswordField fx:id="inputSenha" layoutX="43.0" layoutY="81.0" prefHeight="25.0" prefWidth="214.0" promptText="Senha" AnchorPane.topAnchor="81.0" />
+                        <JFXButton buttonType="RAISED" layoutX="42.0" layoutY="129.0" onAction="#loginAction" prefHeight="25.0" prefWidth="215.0" style="-fx-background-color: green; -fx-text-fill: white;" text="Entrar" AnchorPane.topAnchor="129.0" />
                      </children>
                   </AnchorPane>
             </content>
           </TitledPane>
-          <TitledPane animated="false" expanded="false" style="-fx-text-fill: white; -fx-color: #1565c0;" text="Cadastrar-se">
+          <TitledPane animated="false" style="-fx-text-fill: white; -fx-color: #1565c0;" text="Cadastrar-se">
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <JFXPasswordField fx:id="inputSenhaCd" layoutX="13.0" layoutY="90.0" prefHeight="25.0" prefWidth="214.0" promptText="Senha" AnchorPane.topAnchor="74.0" />
-                        <JFXButton buttonType="RAISED" layoutX="12.0" layoutY="189.0" prefHeight="25.0" prefWidth="215.0" style="-fx-background-color: blue; -fx-text-fill: white;" text="Criar" />
-                        <JFXTextField fx:id="inputEmailCd" labelFloat="true" layoutX="13.0" layoutY="30.0" prefHeight="25.0" prefWidth="213.0" promptText="Email" AnchorPane.topAnchor="30.0" />
-                        <JFXPasswordField fx:id="inputConfirmSenhaCd" layoutX="13.0" layoutY="135.0" prefHeight="25.0" prefWidth="214.0" promptText="Confirmar Senha" />
+                        <JFXTextField fx:id="inputNomeCd" labelFloat="true" layoutX="43.0" layoutY="37.0" prefHeight="25.0" prefWidth="213.0" promptText="Nome" />
+                        <JFXTextField fx:id="inputEmailCd" labelFloat="true" layoutX="43.0" layoutY="76.0" prefHeight="25.0" prefWidth="213.0" promptText="Email" AnchorPane.topAnchor="76.0" />
+                        <JFXPasswordField fx:id="inputSenhaCd" layoutX="43.0" layoutY="120.0" prefHeight="25.0" prefWidth="214.0" promptText="Senha" AnchorPane.topAnchor="120.0" />
+                        <JFXPasswordField fx:id="inputConfirmSenhaCd" layoutX="43.0" layoutY="172.0" prefHeight="25.0" prefWidth="214.0" promptText="Confirmar Senha" />
+                        <JFXButton buttonType="RAISED" layoutX="42.0" layoutY="215.0" onAction="#cadastrarAction" prefHeight="25.0" prefWidth="215.0" style="-fx-background-color: green; -fx-text-fill: white;" text="Criar" />
                      </children>
                   </AnchorPane>
             </content>
@@ -62,4 +64,7 @@
         </panes>
       </Accordion>
    </right>
+    <stylesheets>
+        <URL value="@login.css"/>
+    </stylesheets>
 </BorderPane>
