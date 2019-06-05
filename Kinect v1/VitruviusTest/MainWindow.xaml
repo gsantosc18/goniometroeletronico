@@ -1,0 +1,68 @@
+﻿<Window
+    x:Class="VitruviusTest.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:vitruvius="clr-namespace:LightBuzz.Vitruvius.Controls;assembly=LightBuzz.Vitruvius.WPF"
+
+    Width="991.955" Height="580"
+    Title="Área de Sessão"
+
+    Loaded="Window_Loaded"
+    >
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="250" />
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.ColumnSpan="1" Margin="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <!-- You can use either a KinectViewer or the Viewbox here by commenting out one of the two (also set or comment out accordingly the USE_KINECTVIEWER in the codebehind [.xaml.cs] file) -->
+            <vitruvius:KinectViewer x:Name="kinectViewer" Grid.Row="0" Width="Auto" />
+            <!--
+            <Viewbox Grid.Row="0" Stretch="UniformToFill">
+                <Grid Style="{StaticResource GridStyle}">
+                    <Image Name="camera" Stretch="None" />
+                    <Canvas Name="canvas" />
+                </Grid>
+            </Viewbox>
+            -->
+
+            <!--<StackPanel Grid.Row="1" Style="{StaticResource StackPanelButtonsStyle}">
+                <Button Content="Color" Click="Color_Click" />
+                <Button Content="Depth" Click="Depth_Click" />
+            </StackPanel>-->
+
+        </Grid>
+
+        <StackPanel Grid.Column="1" Style="{StaticResource StackPanelTextBlocksStyle}" Margin="33,0,0,10" Width="217">
+            <StackPanel/>
+
+            <StackPanel Style="{StaticResource StackPanelTextBlocksStyle}" Width="212" Margin="5,5,0,5">
+                <TextBlock Text="Altura do paciente:" />
+                <TextBlock Name="tblHeights" Text="-" />
+                <TextBlock Text="Braço Direito:" />
+                <TextBlock x:Name="AnguloDireito" Text="-" />
+                <TextBlock Text="Braço Esquerdo:" />
+                <TextBlock x:Name="AnguloEsquerdo" Text="-" />
+                <TextBlock Text="Ângulo Inicial Direito:" />
+                <TextBlock x:Name="AnguloDireitoInicial" Text="-" />
+                <TextBlock Text="Ângulo Final Direito:" />
+                <TextBlock x:Name="AnguloDireitoFinal" Text="-" />
+                <TextBlock Text="Ângulo Inicial Esquerdo:" />
+                <TextBlock x:Name="AnguloEsquerdoInicial" Text="-" />
+                <TextBlock Text="Ângulo Final Esquerdo:" />
+                <TextBlock x:Name="AnguloEsquerdoFinal" Text="-" />
+            </StackPanel>
+            <Button x:Name="btnStart" Content="Iniciar" Margin="0" Width="138" Background="#FFEC0000" Foreground="White" FontWeight="Bold" FontSize="16" Click="Button_Click"/>
+            <Button x:Name="btnRestart" Content="Reiniciar" Margin="40,10,39,0" Width="138" Background="#FF000ADA" Foreground="White" FontWeight="Bold" FontSize="16" Click="btnRestart_Click"/>
+            <Button x:Name="btnGravar" Content="Gravar" Margin="40,10,39,0" Width="138" Background="#FF00DA59" Foreground="White" FontWeight="Bold" FontSize="16" Click="btnGravar_Click"/>
+        </StackPanel>
+
+    </Grid>
+</Window>

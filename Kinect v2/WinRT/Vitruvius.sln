@@ -1,0 +1,107 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LightBuzz.Vitruvius", "LightBuzz.Vitruvius\LightBuzz.Vitruvius.csproj", "{648FB806-08FE-45B3-B400-00B0C653776B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samples", "Samples\Samples.csproj", "{4C4DBAB9-D5D6-4D46-80A8-3A474853031D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Diagrams", "Diagrams", "{EA0F1A9F-8482-4781-88FA-714970F16A76}"
+	ProjectSection(SolutionItems) = preProject
+		LightBuzz.Vitruvius\Controls\Vitruvius.Controls.cd = LightBuzz.Vitruvius\Controls\Vitruvius.Controls.cd
+		LightBuzz.Vitruvius\Bitmaps\Vitruvius_Bitmaps.cd = LightBuzz.Vitruvius\Bitmaps\Vitruvius_Bitmaps.cd
+		LightBuzz.Vitruvius\Core\Vitruvius_Core.cd = LightBuzz.Vitruvius\Core\Vitruvius_Core.cd
+		LightBuzz.Vitruvius\Extensions\Vitruvius_Extensions.cd = LightBuzz.Vitruvius\Extensions\Vitruvius_Extensions.cd
+		LightBuzz.Vitruvius\Gestures\Vitruvius_Gestures.cd = LightBuzz.Vitruvius\Gestures\Vitruvius_Gestures.cd
+		LightBuzz.Vitruvius\Gestures\Segments\Vitruvius_GestureSegments.cd = LightBuzz.Vitruvius\Gestures\Segments\Vitruvius_GestureSegments.cd
+		LightBuzz.Vitruvius\Tools\Vitruvius_Tools.cd = LightBuzz.Vitruvius\Tools\Vitruvius_Tools.cd
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7D4AFEE9-4093-4EE5-B0F2-D4D94FB3DE13}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\LICENSE = ..\..\LICENSE
+		..\..\README.md = ..\..\README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{648FB806-08FE-45B3-B400-00B0C653776B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{648FB806-08FE-45B3-B400-00B0C653776B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{648FB806-08FE-45B3-B400-00B0C653776B}.Debug|ARM.ActiveCfg = Debug|ARM
+		{648FB806-08FE-45B3-B400-00B0C653776B}.Debug|ARM.Build.0 = Debug|ARM
+		{648FB806-08FE-45B3-B400-00B0C653776B}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{648FB806-08FE-45B3-B400-00B0C653776B}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{648FB806-08FE-45B3-B400-00B0C653776B}.Debug|Win32.ActiveCfg = Debug|x86
+		{648FB806-08FE-45B3-B400-00B0C653776B}.Debug|Win32.Build.0 = Debug|x86
+		{648FB806-08FE-45B3-B400-00B0C653776B}.Debug|x64.ActiveCfg = Debug|x64
+		{648FB806-08FE-45B3-B400-00B0C653776B}.Debug|x64.Build.0 = Debug|x64
+		{648FB806-08FE-45B3-B400-00B0C653776B}.Debug|x86.ActiveCfg = Debug|x86
+		{648FB806-08FE-45B3-B400-00B0C653776B}.Debug|x86.Build.0 = Debug|x86
+		{648FB806-08FE-45B3-B400-00B0C653776B}.Release|Any CPU.ActiveCfg = Release|x86
+		{648FB806-08FE-45B3-B400-00B0C653776B}.Release|Any CPU.Build.0 = Release|x86
+		{648FB806-08FE-45B3-B400-00B0C653776B}.Release|ARM.ActiveCfg = Release|ARM
+		{648FB806-08FE-45B3-B400-00B0C653776B}.Release|ARM.Build.0 = Release|ARM
+		{648FB806-08FE-45B3-B400-00B0C653776B}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{648FB806-08FE-45B3-B400-00B0C653776B}.Release|Mixed Platforms.Build.0 = Release|x86
+		{648FB806-08FE-45B3-B400-00B0C653776B}.Release|Win32.ActiveCfg = Release|x86
+		{648FB806-08FE-45B3-B400-00B0C653776B}.Release|Win32.Build.0 = Release|x86
+		{648FB806-08FE-45B3-B400-00B0C653776B}.Release|x64.ActiveCfg = Release|x64
+		{648FB806-08FE-45B3-B400-00B0C653776B}.Release|x64.Build.0 = Release|x64
+		{648FB806-08FE-45B3-B400-00B0C653776B}.Release|x86.ActiveCfg = Release|x86
+		{648FB806-08FE-45B3-B400-00B0C653776B}.Release|x86.Build.0 = Release|x86
+		{4C4DBAB9-D5D6-4D46-80A8-3A474853031D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C4DBAB9-D5D6-4D46-80A8-3A474853031D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C4DBAB9-D5D6-4D46-80A8-3A474853031D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{4C4DBAB9-D5D6-4D46-80A8-3A474853031D}.Debug|ARM.ActiveCfg = Debug|ARM
+		{4C4DBAB9-D5D6-4D46-80A8-3A474853031D}.Debug|ARM.Build.0 = Debug|ARM
+		{4C4DBAB9-D5D6-4D46-80A8-3A474853031D}.Debug|ARM.Deploy.0 = Debug|ARM
+		{4C4DBAB9-D5D6-4D46-80A8-3A474853031D}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{4C4DBAB9-D5D6-4D46-80A8-3A474853031D}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{4C4DBAB9-D5D6-4D46-80A8-3A474853031D}.Debug|Mixed Platforms.Deploy.0 = Debug|x86
+		{4C4DBAB9-D5D6-4D46-80A8-3A474853031D}.Debug|Win32.ActiveCfg = Debug|x86
+		{4C4DBAB9-D5D6-4D46-80A8-3A474853031D}.Debug|Win32.Build.0 = Debug|x86
+		{4C4DBAB9-D5D6-4D46-80A8-3A474853031D}.Debug|Win32.Deploy.0 = Debug|x86
+		{4C4DBAB9-D5D6-4D46-80A8-3A474853031D}.Debug|x64.ActiveCfg = Debug|x64
+		{4C4DBAB9-D5D6-4D46-80A8-3A474853031D}.Debug|x64.Build.0 = Debug|x64
+		{4C4DBAB9-D5D6-4D46-80A8-3A474853031D}.Debug|x64.Deploy.0 = Debug|x64
+		{4C4DBAB9-D5D6-4D46-80A8-3A474853031D}.Debug|x86.ActiveCfg = Debug|x86
+		{4C4DBAB9-D5D6-4D46-80A8-3A474853031D}.Debug|x86.Build.0 = Debug|x86
+		{4C4DBAB9-D5D6-4D46-80A8-3A474853031D}.Debug|x86.Deploy.0 = Debug|x86
+		{4C4DBAB9-D5D6-4D46-80A8-3A474853031D}.Release|Any CPU.ActiveCfg = Release|x86
+		{4C4DBAB9-D5D6-4D46-80A8-3A474853031D}.Release|Any CPU.Build.0 = Release|x86
+		{4C4DBAB9-D5D6-4D46-80A8-3A474853031D}.Release|Any CPU.Deploy.0 = Release|x86
+		{4C4DBAB9-D5D6-4D46-80A8-3A474853031D}.Release|ARM.ActiveCfg = Release|ARM
+		{4C4DBAB9-D5D6-4D46-80A8-3A474853031D}.Release|ARM.Build.0 = Release|ARM
+		{4C4DBAB9-D5D6-4D46-80A8-3A474853031D}.Release|ARM.Deploy.0 = Release|ARM
+		{4C4DBAB9-D5D6-4D46-80A8-3A474853031D}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{4C4DBAB9-D5D6-4D46-80A8-3A474853031D}.Release|Mixed Platforms.Build.0 = Release|x86
+		{4C4DBAB9-D5D6-4D46-80A8-3A474853031D}.Release|Mixed Platforms.Deploy.0 = Release|x86
+		{4C4DBAB9-D5D6-4D46-80A8-3A474853031D}.Release|Win32.ActiveCfg = Release|x86
+		{4C4DBAB9-D5D6-4D46-80A8-3A474853031D}.Release|Win32.Build.0 = Release|x86
+		{4C4DBAB9-D5D6-4D46-80A8-3A474853031D}.Release|Win32.Deploy.0 = Release|x86
+		{4C4DBAB9-D5D6-4D46-80A8-3A474853031D}.Release|x64.ActiveCfg = Release|x64
+		{4C4DBAB9-D5D6-4D46-80A8-3A474853031D}.Release|x64.Build.0 = Release|x64
+		{4C4DBAB9-D5D6-4D46-80A8-3A474853031D}.Release|x64.Deploy.0 = Release|x64
+		{4C4DBAB9-D5D6-4D46-80A8-3A474853031D}.Release|x86.ActiveCfg = Release|x86
+		{4C4DBAB9-D5D6-4D46-80A8-3A474853031D}.Release|x86.Build.0 = Release|x86
+		{4C4DBAB9-D5D6-4D46-80A8-3A474853031D}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
