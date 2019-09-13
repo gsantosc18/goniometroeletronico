@@ -1,0 +1,9 @@
+C:\Users\Myhouse\Downloads\Vitruvius-master\Kinect v1\LightBuzz.Vitruvius\bin\Debug\LightBuzz.Vitruvius.dll
+C:\Users\Myhouse\Downloads\Vitruvius-master\Kinect v1\LightBuzz.Vitruvius\bin\Debug\LightBuzz.Vitruvius.pdb
+C:\Users\Myhouse\Downloads\Vitruvius-master\Kinect v1\LightBuzz.Vitruvius\bin\Debug\Microsoft.Kinect.dll
+C:\Users\Myhouse\Downloads\Vitruvius-master\Kinect v1\LightBuzz.Vitruvius\bin\Debug\Microsoft.Kinect.xml
+C:\Users\Myhouse\Downloads\Vitruvius-master\Kinect v1\LightBuzz.Vitruvius\obj\Debug\LightBuzz.Vitruvius.csprojResolveAssemblyReference.cache
+C:\Users\Myhouse\Downloads\Vitruvius-master\Kinect v1\LightBuzz.Vitruvius\obj\Debug\LightBuzz.Vitruvius.csproj.CoreCompileInputs.cache
+C:\Users\Myhouse\Downloads\Vitruvius-master\Kinect v1\LightBuzz.Vitruvius\obj\Debug\LightBuzz.Vitruvius.csproj.CopyComplete
+C:\Users\Myhouse\Downloads\Vitruvius-master\Kinect v1\LightBuzz.Vitruvius\obj\Debug\LightBuzz.Vitruvius.dll
+C:\Users\Myhouse\Downloads\Vitruvius-master\Kinect v1\LightBuzz.Vitruvius\obj\Debug\LightBuzz.Vitruvius.pdb

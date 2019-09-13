@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
-<!-- Generated 23/05/2018 05:49:30 by Hibernate Tools 4.3.1 -->
+<!-- Generated 25/05/2018 02:01:52 by Hibernate Tools 4.3.1 -->
 <hibernate-mapping>
     <class name="modelo.entity.Paciente" table="paciente" catalog="gonio" optimistic-lock="version">
         <id name="idPaciente" type="java.lang.Integer">
@@ -25,7 +25,7 @@
         </property>
         <property name="observacao" type="string">
             <column name="observacao" length="65535">
-                <comment>tabela que guarda as informa&#195;&#167;&#195;&#181;es dos pacientes</comment>
+                <comment>tabela que guarda as informa&#231;&#245;es dos pacientes</comment>
             </column>
         </property>
     </class>

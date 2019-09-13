@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 25/05/2018 02:01:52 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="modelo.entity.Sessao" table="sessao" catalog="gonio" optimistic-lock="version">
+        <id name="idSessao" type="java.lang.Integer">
+            <column name="id_sessao" />
+            <generator class="identity" />
+        </id>
+        <property name="aie" type="double">
+            <column name="aie" precision="22" scale="0" not-null="true">
+                <comment>Angulo Inicial Esquerdo</comment>
+            </column>
+        </property>
+        <property name="afe" type="double">
+            <column name="afe" precision="22" scale="0" not-null="true">
+                <comment>Angulo Final Esquerdo</comment>
+            </column>
+        </property>
+        <property name="aid" type="double">
+            <column name="aid" precision="22" scale="0" not-null="true">
+                <comment>Angulo Inicial Direito</comment>
+            </column>
+        </property>
+        <property name="afd" type="double">
+            <column name="afd" precision="22" scale="0" not-null="true">
+                <comment>Angulo Final Direito</comment>
+            </column>
+        </property>
+        <property name="registro" type="timestamp">
+            <column name="registro" length="19" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

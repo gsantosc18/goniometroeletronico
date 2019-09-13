@@ -1,5 +1,6 @@
 
 import controle.Principal;
+import java.io.IOException;
 import javafx.application.Application;
 import javafx.stage.Stage;
 import modelo.util.Scenario;
@@ -14,16 +15,18 @@ import modelo.util.Scenario;
  *
  * @author myhouse
  */
-public class TestaAreaDados extends Application {
+public class TestaAreaDados{
 
-    @Override
-    public void start(Stage primaryStage) throws Exception {
-        Scenario.setPrimaStage(primaryStage);
-        Scenario.show(Principal.class.getClass().getResource("/visao/AreaDadosFXML.fxml"));
-    }
+//    @Override
+//    public void start(Stage primaryStage) throws Exception {
+//        Scenario.setPrimaStage(primaryStage);
+//        Scenario.show(Principal.class.getClass().getResource("/visao/CriaPacienteFXML.fxml"));
+//    }
 
-    public static void main(String[] args) {
-        launch(args);
+    public static void main(String[] args) throws IOException {
+        String comando = "C:\\kinect\\VitruviusTest.exe";
+        Process processo = Runtime.getRuntime().exec(comando);
+//        launch(args);
     }
     
 }

@@ -52,6 +52,7 @@ public class Scenario {
         getPrimaStage().minHeightProperty().bind(scena.heightProperty());
         getPrimaStage().show();
         getPrimaStage().requestFocus();
+        getPrimaStage().setOnCloseRequest(event -> {HibernateUtil.getSessionFactory().close();});
 //        primaStage.getIcons().add(new Image(Scenario.class.getClass().getResourceAsStream("/image/iconKey.png")));
     }
     
